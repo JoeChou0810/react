@@ -6,14 +6,15 @@
 // import Menu from './1213/Menu'
 // import Counter from './1215/2.counter/Counter'
 // import Parents from './1215/1.ptoc/Parents'
-
-import Parent from './1215/3.ptoc/Parent'
-
 // import Exam2 from './1213/3.state-exam/Exam'
+// import Parent from './1215/3.ptoc/Parent'
+import TodoApp from './1215/4.todo/TodoApp'
+// import TodoList from './1215/4.todo/TodoList'
+
 function App() {
   return (
     <>
-      <Parent />
+      <TodoApp />
     </>
   )
 }
