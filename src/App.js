@@ -10,8 +10,7 @@
 // import Parent from './1215/3.ptoc/Parent'
 // import TodoApp from './1215/4.todo/TodoApp'
 // import TodoList from './1215/4.todo/TodoList'
-import TodoApp from './1216/1.todo-p2/TodoApp'
-
+import TodoApp from './1219/1.todo-p3/TodoApp'
 function App() {
   return (
     <>
