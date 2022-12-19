@@ -6,7 +6,7 @@ function HTML5form() {
 
   // radio group
   // ex.性別選項 : 男, 女, 不提供
-  const [gender, setGender] = useState('女')
+  const [gender, setGender] = useState('')
   const genderOption = ['男', '女', '不提供']
 
   // select
