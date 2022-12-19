@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import AddForm from './AddForm'
-import TodoList from './TodoList'
+import TodoList from './TodoList/TodoList'
 
 import './TodoApp.css'
 

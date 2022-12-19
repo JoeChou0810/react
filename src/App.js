@@ -8,8 +8,9 @@
 // import Parents from './1215/1.ptoc/Parents'
 // import Exam2 from './1213/3.state-exam/Exam'
 // import Parent from './1215/3.ptoc/Parent'
-import TodoApp from './1215/4.todo/TodoApp'
+// import TodoApp from './1215/4.todo/TodoApp'
 // import TodoList from './1215/4.todo/TodoList'
+import TodoApp from './1216/1.todo-p2/TodoApp'
 
 function App() {
   return (
