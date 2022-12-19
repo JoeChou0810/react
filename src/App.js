@@ -10,14 +10,14 @@
 // import Parent from './1215/3.ptoc/Parent'
 // import TodoApp from './1215/4.todo/TodoApp'
 // import TodoList from './1215/4.todo/TodoList'
-
-import HTML5form from './1219/1.todo-p3/2.form/HTML5form'
-
 // import TodoApp from './1219/1.todo-p3/TodoApp'
+// import HTML5form from './1219/1.todo-p3/2.form/HTML5form'
+import BirthSelect from './1219/1.todo-p3/3.birth/BirthSelect'
+
 function App() {
   return (
     <>
-      <HTML5form />
+      <BirthSelect />
     </>
   )
 }
