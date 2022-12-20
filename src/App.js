@@ -13,12 +13,21 @@
 // import TodoApp from './1219/1.todo-p3/TodoApp'
 // import HTML5form from './1219/1.todo-p3/2.form/HTML5form'
 // import BirthSelect from './1219/1.todo-p3/3.birth/BirthSelect'
-import HTMLValidForm from './1219/1.todo-p3/4.form-p2/HTMLValidForm'
+// import HTMLValidForm from './1219/1.todo-p3/4.form-p2/HTMLValidForm'
+// import IdForm from './1220/1.refs/IdForm'
+// import RefsForm from './1220/1.refs/RefsForm'
+
+import Main from './1220/2.lifecycle/Main'
 
 function App() {
   return (
     <>
-      <HTMLValidForm />
+      {/* <IdForm /> */}
+      {/* <IdForm /> */}
+      <hr />
+      {/* <RefsForm /> */}
+      {/* <RefsForm /> */}
+      <Main />
     </>
   )
 }
