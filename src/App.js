@@ -17,17 +17,19 @@
 // import IdForm from './1220/1.refs/IdForm'
 // import RefsForm from './1220/1.refs/RefsForm'
 
-import Main from './1220/2.lifecycle/Main'
+// import Main from './1220/2.lifecycle/Main'
+import User from './1220/3.server-data/User'
 
 function App() {
   return (
     <>
       {/* <IdForm /> */}
       {/* <IdForm /> */}
-      <hr />
+      {/* <hr /> */}
       {/* <RefsForm /> */}
       {/* <RefsForm /> */}
-      <Main />
+
+      <User />
     </>
   )
 }
