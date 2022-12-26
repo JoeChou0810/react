@@ -16,10 +16,10 @@
 // import HTMLValidForm from './1219/1.todo-p3/4.form-p2/HTMLValidForm'
 // import IdForm from './1220/1.refs/IdForm'
 // import RefsForm from './1220/1.refs/RefsForm'
-
 // import Main from './1220/2.lifecycle/Main'
-import User from './1220/3.server-data/User'
-
+// import User from './1220/3.server-data/User'
+// import Demo from './1226/Demo/Demo'
+// import BS5 from './1226/React-bs/BS5'
 function App() {
   return (
     <>
@@ -28,8 +28,6 @@ function App() {
       {/* <hr /> */}
       {/* <RefsForm /> */}
       {/* <RefsForm /> */}
-
-      <User />
     </>
   )
 }
