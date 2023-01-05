@@ -1,34 +1,48 @@
-// import Card from './1212/1-jsx/Card'
-// import JsxValue from './1212/2.jsx/jsxValue'
-// import Students from './1212/3.jsx-map/Students'
-// import ProductTable from './1212/3.jsx-map/ProductTable2'
-// import Counter from "./1213/Counter"
-// import Menu from './1213/Menu'
-// import Counter from './1215/2.counter/Counter'
-// import Parents from './1215/1.ptoc/Parents'
-// import Exam2 from './1213/3.state-exam/Exam'
-// import Parent from './1215/3.ptoc/Parent'
-// import TodoApp from './1215/4.todo/TodoApp'
-// import TodoList from './1215/4.todo/TodoList'
-// import TodoApp from './1219/1.todo-p3/TodoApp'
-// import HTML5form from './1219/1.todo-p3/2.form/HTML5form'
-// import BirthSelect from './1219/1.todo-p3/3.birth/BirthSelect'
-// import HTMLValidForm from './1219/1.todo-p3/4.form-p2/HTMLValidForm'
-// import IdForm from './1220/1.refs/IdForm'
-// import RefsForm from './1220/1.refs/RefsForm'
-// import Main from './1220/2.lifecycle/Main'
-// import User from './1220/3.server-data/User'
-// import Demo from './1226/Demo/Demo'
-// import BS5 from './1226/React-bs/BS5'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+
+// 引入頁面元件
+import Home from './pages/Home'
+import About from './pages/About'
+import Product from './pages/Product'
+import NotFound from './pages/NotFound'
+
+// 巢狀使用
+import Layout from './pages/users/Layout'
+import Register from './pages/users/Register'
+import Login from './pages/users/Login'
+
+// 引入排版元件
+import Menubar from './layout/Menubar'
+import Footer from './layout/Footer'
+import MyContent from './layout/MyContent'
+
 function App() {
   return (
-    <>
-      {/* <IdForm /> */}
-      {/* <IdForm /> */}
-      {/* <hr /> */}
-      {/* <RefsForm /> */}
-      {/* <RefsForm /> */}
-    </>
+    <BrowserRouter>
+      {/* 所有頁面統一選單(導覽列) */}
+      <Menubar />
+
+      {/* 路由表 */}
+      <MyContent>
+        {/* start: 只切換中間的頁面元件 */}
+        <Routes>
+          {/* index 同等於 path='/' */}
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          {/* 巢狀路由  `/user/xxxx` */}
+          <Route path="user" element={<Layout />}>
+            <Route path="register" element={<Register />} />
+            <Route path="login" element={<Login />} />
+          </Route>
+          <Route path="product" element={<Product />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        {/* end */}
+      </MyContent>
+
+      {/* 所有頁面統一頁尾 */}
+      <Footer />
+    </BrowserRouter>
   )
 }
 
